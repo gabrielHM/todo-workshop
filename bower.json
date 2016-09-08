@@ -1,0 +1,28 @@
+{
+  "name": "todo",
+  "description": "Simple todo application tutorial.",
+  "main": "",
+  "authors": [
+    "Gabriel Huertas Marrero <gabriel.huertas1@upr.edu>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "todo",
+    "workshop"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "ui-router#^0.3.1"
+  }
+}

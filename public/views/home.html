@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Awesome Todo App <span class="badge">{{ todos.length }}</span></h3>
+        </div>
+        <div class="panel-body">
+            <!-- Todo List -->
+            <div id="todo-list" class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+
+                    <!-- Loop over the todos in $scope.todos -->
+                    <div class="checkbox" ng-repeat="todo in todos">
+                        <label>
+                            <input type="checkbox" ng-click="deleteTodo(todo._id)">
+
+                            {{ todo.task }}
+                        </label>
+                    </div>
+
+                    <div ng-if="todos.length===0">
+                        <h2>Looks like you have nothing to do today. :D</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form to create todos -->
+    <div id="todo-form" class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <form>
+                <div class="form-group">
+
+                    <!-- Bind this value to 'task' (Angular) -->
+                    <input type="text" class="form-control input-lg text-center" placeholder="Let's be productive!" ng-model="task">
+                </div>
+
+                <!-- Button to call newTodo(task) -->
+                <button type="submit" class="btn btn-primary btn-lg" ng-click="newTodo(task)">Add</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /container -->
