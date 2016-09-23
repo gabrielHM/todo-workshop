@@ -3,7 +3,7 @@ var router = express.Router();
 var pg = require('pg');
 var uuid = require('uuid');
 var getAllTodos = 'SELECT * from todo;';
-var dbUrl = 'postgres://postgres:colegio802@192.168.230.129:5432/todo';
+var dbUrcd//postgres:colegio802@192.168.230.129:5432/todo';
 
 /* GET home page. */
 
